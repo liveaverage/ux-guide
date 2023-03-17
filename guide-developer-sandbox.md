@@ -4,6 +4,7 @@ NVIDIA LaunchPad is a free program that provides users short-term access to a la
 
 - [NVIDIA Cloud Native Stack with Docker](https://github.com/NVIDIA/cloud-native-stack/tree/master/playbooks)
 - [Code Server](https://github.com/coder/code-server/) with a prescriptive workspace
+- Ohhhh something new and pretty!
 
 Within the Developer Sandbox you have full `sudo` privileges on the GPU node.
 
