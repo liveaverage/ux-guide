@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>NVIDIA LaunchPad</title>
+
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="_static/omni-style.css" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"
+    />
+
+    <link rel="shortcut icon" href="_static/favicon.ico" />
+
+    <style>
+      :root {
+        --theme-color: var(--nv-black);
+        --content-max-width: 85em;
+        --sidebar-background: #000;
+        --heading-color: var(--sidebar-headline-color);
+        --sidebar-nav-strong-color: var(--heading-color);
+        --sidebar-nav-link-color--active: var(--heading-color);
+        --sidebar-nav-link-color: var(--sidebar-text-color);
+        --sidebar-nav-link-border-color--active: var(--heading-color);
+        --text-main-color: #212121;
+
+        --navbar-root-color--active: var(--nv-green);
+        --sidebar-nav-link-background--active: #dcdcdc;
+        --search-result-item-color: #fcfcfc;
+        --cover-background-color: var(--nv-green);
+        --cover-background-image: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(236, 245, 219, 1) 95%,
+          rgba(214, 247, 157, 1) 99%,
+          rgba(155, 222, 38, 1) 100%
+        );
+      }
+
+      .cover h1 {
+        background: none;
+        color: #000;
+        font-weight: 600;
+      }
+
+      .wy-menu a {
+        background: var(--sidebar-nav-pagelink-background) !important;
+        padding: var(--sidebar-nav-pagelink-padding, var(--sidebar-nav-link-padding)) !important;
+      }
+
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="_static/js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/design-tabs.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script >mermaid.initialize({startOnLoad:true});</script>
+        <script src="_static/version.js"></script>
+        <script src="_static/social-media.js"></script>
+        <script src="_static/launchpad.js"></script>
+        <script language="javascript" src="/fc/static/fc.js"></script>
+    <script type="text/javascript" src="_static/js/theme.js"></script> -->
+  </head>
+
+  <body class="wy-body-for-nav">
+    <div id="app"></div>
+    <script>
+    
+      window.$docsify = {
+        name: "NVIDIA LaunchPad",
+        repo: "",
+	basePath: "https://raw.githubusercontent.com/liveaverage/dc-powerwall-dashboard/master/",
+        logo: "_static/main_nv_logo_square.png",
+        coverpage: true,
+        onlyCover: true,
+        loadSidebar: true,
+        loadNavbar: true,
+        //relativePath: true,
+        subMaxLevel: 2,
+        pagination: {
+          previousText: "Previous",
+          nextText: "Next",
+          crossChapter: true,
+          crossChapterText: false,
+        },
+        plugins: [
+          function pageFooter(hook, vm) {
+            var footer = [
+              "<hr/>",
+              "<footer>",
+              "<p>&#169; Copyright 2022, NVIDIA.</p>",
+              "</footer>",
+            ].join("");
+
+            hook.afterEach(function (html) {
+              return html + footer;
+            });
+          },
+        ],
+      };
+
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+
+    <!-- Recommended -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+    <script src="_static/jquery.js"></script>
+    <script src="_static/launchpad.js"></script>
+
+
+  </body>
+</html>

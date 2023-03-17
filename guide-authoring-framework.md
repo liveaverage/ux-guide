@@ -1,0 +1,41 @@
+# NVIDIA LaunchPad Authoring Framework
+
+NVIDIA LaunchPad is a free program that provides users short-term access to a large catalog of hands-on labs. This particular deployment includes the LaunchPad Authoring Framework, which consists of the following supplemental components & configurations:
+
+- [Code Server](https://github.com/coder/code-server/) with a prescriptive workspace
+- [Docsify](https://github.com/docsifyjs/docsify) for on-the-fly rendering of markdown and quick authoring of experience documentation
+- [NGINX Reloader]() for quick and easy reverse proxy configuration refreshes
+
+In certain cases or by special request the Lab Authoring Framework will also include `sudo` privileges from the default bastion user.
+
+## Architecture
+
+Each LaunchPad deployment consists of 2 or more nodes deployed in a configuration that meets NVIDIA tenant security and isolation standards:
+
+![LaunchPad Architecture](_images/lp-arch.png ':size=50%')
+
+## Traffic Routing
+
+Due to the bastion proxy configuration you may need to utilize dedicated, supplemental hostnames associated with each LaunchPad deployment. These additional hostnames vary depending on the underlying platform.
+
+### NVIDIA Cloud Native Stack Hostnames
+
+- Available:
+  - `{UUID}-apps.nvidialaunchpad.com`
+  - `{UUID}-client.nvidialaunchpad.com`
+- Reserved: 
+  - `{UUID}-auth.nvidialaunchpad.com`
+  - `{UUID}-dashboards.nvidialaunchpad.com`
+  - `{UUID}-client-riva.nvidialaunchpad.com`
+  - `{UUID}-minio-dfp-morpheus.nvidialaunchpad.com`
+  - `{UUID}-kibana-dfp-morpheus.nvidialaunchpad.com`
+  - `{UUID}-mlflow-dfp-morpheus.nvidialaunchpad.com`
+
+### Red Hat OpenShift Hostnames
+
+- Available:
+  - `{UUID}-apps.nvidialaunchpad.com`
+- Reserved: 
+  - `{UUID}-oauth.nvidialaunchpad.com`
+  - `{UUID}-console.nvidialaunchpad.com`
+  - `{UUID}-grafana.nvidialaunchpad.com`
